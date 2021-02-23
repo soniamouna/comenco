@@ -41,6 +41,7 @@ import Contact from "./elements/Contact";
 import PortfolioDetails from "./elements/PortfolioDetails";
 import Blog from "./elements/Blog";
 import BlogDetails from "./elements/BlogDetails";
+import Afm from "./elements/Afm";
 import error404 from "./elements/error404";
 
 
@@ -89,6 +90,7 @@ class Root extends Component{
                     <Route exact path={`${process.env.PUBLIC_URL}/creative-portfolio`} component={CreativePortfolio}/>
                     <Route exact path={`${process.env.PUBLIC_URL}/interior-landing`} component={InteriorLanding}/>
                     <Route exact path={`${process.env.PUBLIC_URL}/corporate-business`} component={CorporateBusiness}/>
+                    <Route exact path={`${process.env.PUBLIC_URL}/active-facility-managment`} component={Afm}/>
 
 
                     {/* Element Layot */}

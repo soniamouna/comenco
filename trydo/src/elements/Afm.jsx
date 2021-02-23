@@ -16,10 +16,9 @@ import Contact from "../elements/contact/ContactTwo";
 import Helmet from "../component/common/Helmet";
 import BreadcrumpS from "../elements/BreadcrumpS";
 import Difference from "../elements/Difference";
-import BlogSlideHomepage from "../elements/BlogSlideHomepage";
+import ListSlideHomepage from "../elements/ListSlideHomepage";
 import { FiHeadphones , FiMail , FiMapPin } from "react-icons/fi";
-import Content1 from "../elements/blog/Content1";
-import Content2 from "../elements/blog/Content2";
+import AfmList from "../elements/blog/AfmList";
 
 
 
@@ -40,7 +39,7 @@ const list = [
         image: 'image-1',
         category: '',
         title: 'Active Facility Managment',
-        link:'https://www.comenco.ch/active-facility-managment'
+        link:'https://www.comenco.ch/active-facility-managment/'
     },
     {
         image: 'image-2',
@@ -80,7 +79,7 @@ const DataCounter = [
 
 
 
-class Comenco extends Component{
+  class Afm extends Component{
     constructor(props) {
         super(props);
         this.menuTrigger = this.menuTrigger.bind(this);
@@ -136,13 +135,13 @@ class Comenco extends Component{
                             </div>
                         </div>
                         <div className="header-right">
-                            <nav className="mainmenunav d-lg-block">
-                                <Scrollspy className="mainmenu" items={['home', 'about','expertise','portfolio', 'difference']} currentClassName="is-current" offset={-200}>
-                                    <li><a href="#home">Accueil</a></li>
-                                    <li><a href="#about">Qui sommes-nous</a></li>
-                                    <li><a href="#expertise">Expertises</a></li>
-                                    <li><a href="#portfolio">Recrutement</a></li>
-                                    <li><a href="#difference">Nos différences</a></li>
+                            <nav className=" mainmenunav d-lg-block">
+                                <Scrollspy className="mainmenu" >
+                                    <li><a href="/#home">Accueil</a></li>
+                                    <li><a href="/#about">Qui sommes-nous</a></li>
+                                    <li><a href="/#expertise">Expertises</a></li>
+                                    <li><a href="/#portfolio">Recrutement</a></li>
+                                    <li><a href="/#difference">Nos différences</a></li>
 
 
                                 </Scrollspy>
@@ -165,35 +164,27 @@ class Comenco extends Component{
                 </header>
                 {/* End Header Area  */}
 
-                {/* Start Slider Area   */}
+                {/* Start Slider Area
 
                     <BreadcrumpS/>
                 {/* End Slider Area   */}
 
 
                 {/* Start About Area */}
-                <div id="about" className=" about-area ptb--120 bg_color--5">
+                <div id="about" className=" about-area ptb--150 bg_color--5">
                   <div className="about-wrapper">
                       <div className="container">
                             <div className="section-title">
-                                <h2 className="title">Qui sommes nous ?</h2>
-                                <p className="description">
+                                <h2 className="text-center title">VOS SPÉCIALISTES INTÉGRAL</h2>
 
-                                </p>
                                 <br/>
-                                <h3 className="title">Société spécialisée en sécurité, COMENCO SA,</h3>
                                 <p>
-                                    Avec 25 ans d’expérience dans le domaine de la sécurité, la direction Comenco SA rassemble des équipes de professionnels motivés à
-                                    même de proposer à nos clients une large palette de services sur mesure. Nous voulons être dignes de confiance dans la collaboration avec chacun(e) de nos interlocuteurs. L’engagement de respecter les normes éthiques les plus élevées est ancré dans le système de valeurs du groupe.
+                                    COMENCO SA se charge des tâches liées à la gestion des immeubles et de diverses infrastructures. La qualité du travail mais également le
+                                    suivi sur le long terme sont pour nous des valeurs essentielles. Notre mission est de conserver vos biens au quotidien.
                                 </p>
-                                <p>Notre engagement se fonde sur les quatre valeurs suivantes de notre entreprise:
-                                  <ul>
-                                    <li>équité</li>
-                                    <li>transparence</li>
-                                    <li>obligation de rendre compte</li>
-                                    <li>responsabilité</li>
-                                  </ul>
-                                  <i><p>En respectant nos collaborateurs, nous respectons nos clients.</p></i>
+                                <p>
+                                  Ces domaines sont couverts pour le moment par nos partenaires spécialisés dans l’exercice de la gestion des installations modernes et
+                                  reliées à toutes les disciplines, le meilleur parti des synergies ainsi dégagées.
                                 </p>
                             </div>
                         </div>
@@ -220,10 +211,7 @@ class Comenco extends Component{
                                     </div>
                                 </div>
                                 {/* End Service Area  */}
-                                <div id="expertise">
-                                <BlogSlideHomepage PostList={Content1}/>
-                                <BlogSlideHomepage PostList={Content2}/>
-                                </div>
+                                <ListSlideHomepage PostList={AfmList}/>
 
                 {/* Start Portfolio Area */}
                 <div className="portfolio-area pt--120 pb--140 bg_color--1" id="portfolio">
@@ -384,4 +372,4 @@ class Comenco extends Component{
         )
     }
 }
-export default Comenco;
+export default Afm;
