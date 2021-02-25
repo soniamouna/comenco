@@ -17,13 +17,11 @@ class BlogSlideHomepage extends Component{
             <div  className=" rn-featured-service-area  pb--120 bg_color--5" id="blog">
                 <div className="container">
                     <div className="row">
-
-                    <div className="col-lg-12 col-md-12 col-12 mt--30">
-                        <div className="text-left section-title">
-                            <h2 className="title ">Nos domaines d'expertise</h2>
+                        <div className="col-lg-12 col-md-12 col-12 mt--30">
+                            <div className="text-left section-title">
+                                <h2 className="title ">{this.props.titre}</h2>
+                            </div>
                         </div>
-                    </div>
-
                         {/* Start Single Service  */}
                         <div className="col-lg-12">
                             <Slider {...slickDot2}>

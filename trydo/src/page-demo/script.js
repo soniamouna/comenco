@@ -61,7 +61,7 @@ export const portfolioSlick2 = {
 
 export const slickDot = {
     infinite: true,
-    slidesToShow: 3,
+    slidesToShow: 4,
     slidesToScroll: 1,
     dots: true,
     arrows: false,
@@ -95,9 +95,12 @@ export const slickDot = {
 export const slickDot2 = {
     infinite: true,
     slidesToShow: 3,
-    slidesToScroll: 1,
+    slidesToScroll: 3,
     dots: true,
     arrows: true,
+    autoplay: true,
+    autoplaySpeed: 3500,
+    pauseOnHover: true,
     responsive: [{
         breakpoint: 800,
         settings: {

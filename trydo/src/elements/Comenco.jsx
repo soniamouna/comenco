@@ -37,6 +37,12 @@ const SlideList = [
 
 const list = [
     {
+        image: 'image-4',
+        category: '',
+        title: 'Securité et Surveillance',
+        link:'https://www.comenco.ch/active-facility-managment'
+    },
+    {
         image: 'image-1',
         category: '',
         title: 'Active Facility Managment',
@@ -45,7 +51,7 @@ const list = [
     {
         image: 'image-2',
         category: '',
-        title: 'Assistance à maître d’œuvre (AMO)',
+        title: 'Assistance à maître d’œuvre',
         link:'https://www.comenco.ch/assistance-a-maitre-doeuvre-amo/'
     },
     {
@@ -137,11 +143,11 @@ class Comenco extends Component{
                         </div>
                         <div className="header-right">
                             <nav className="mainmenunav d-lg-block">
-                                <Scrollspy className="mainmenu" items={['home', 'about','expertise','portfolio', 'difference']} currentClassName="is-current" offset={-200}>
+                                <Scrollspy className="mainmenu" items={['home', 'about','expertise','contact', 'difference']} currentClassName="is-current" offset={-200}>
                                     <li><a href="#home">Accueil</a></li>
                                     <li><a href="#about">Qui sommes-nous</a></li>
                                     <li><a href="#expertise">Expertises</a></li>
-                                    <li><a href="#portfolio">Recrutement</a></li>
+                                    <li><a href="#contact">Contacter nous</a></li>
                                     <li><a href="#difference">Nos différences</a></li>
 
 
@@ -221,18 +227,18 @@ class Comenco extends Component{
                                 </div>
                                 {/* End Service Area  */}
                                 <div id="expertise">
-                                <BlogSlideHomepage PostList={Content1}/>
-                                <BlogSlideHomepage PostList={Content2}/>
+                                    <BlogSlideHomepage PostList={Content1} titre={"Notre expertise"}/>
+                                    <BlogSlideHomepage PostList={Content2} titre={"Notre expertise technologique"}/>
                                 </div>
 
                 {/* Start Portfolio Area */}
-                <div className="portfolio-area pt--120 pb--140 bg_color--1" id="portfolio">
+                <div className="portfolio-area pt--120 pb--140 bg_color--1" id="contact">
                     <div className="rn-slick-dot">
                         <div className="container">
                             <div className="row">
                                 <div className="col-lg-6">
                                     <div className="section-title service-style--3 text-left mb--15 mb_sm--0">
-                                        <h2 className="title">Recrutement</h2>
+                                        <h2 className="title">Contacter nous</h2>
                                     </div>
                                 </div>
                             </div>
@@ -250,9 +256,9 @@ class Comenco extends Component{
                                                         <div className="inner">
                                                             <p>{value.category}</p>
                                                             <h4><a href={value.title}>{value.title}</a></h4>
-                                                            <div className="portfolio-button">
-                                                                <a className="rn-btn" href={value.link}>See Now</a>
-                                                            </div>
+                                                            {/*<div className="portfolio-button">
+                                                                <a className="rn-btn" href={value.link}>Nous contacter</a>
+                                                            </div>*/}
                                                         </div>
                                                     </div>
                                                 </div>
