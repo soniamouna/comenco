@@ -73,6 +73,8 @@ module.exports = function(proxy, allowedHost) {
     },
     // Enable HTTPS if the HTTPS environment variable is set to 'true'
     https: protocol === 'https',
+    key: fs.readFileSync('./config/private.key'),
+    cert: fs.readFileSync('./config/certificate.crt'),
     host,
     overlay: false,
     historyApiFallback: {
@@ -80,6 +82,7 @@ module.exports = function(proxy, allowedHost) {
       // See https://github.com/facebook/create-react-app/issues/387.
       disableDotRule: true,
     },
+
     public: allowedHost,
     proxy,
     before(app, server) {

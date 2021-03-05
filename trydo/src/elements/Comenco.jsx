@@ -143,11 +143,11 @@ class Comenco extends Component{
                         </div>
                         <div className="header-right">
                             <nav className="mainmenunav d-lg-block">
-                                <Scrollspy className="mainmenu" items={['home', 'about','expertise','contact', 'difference']} currentClassName="is-current" offset={-200}>
+                                <Scrollspy className="mainmenu" items={['home', 'about','expertise','services', 'difference']} currentClassName="is-current" offset={-200}>
                                     <li><a href="#home">Accueil</a></li>
                                     <li><a href="#about">Qui sommes-nous</a></li>
                                     <li><a href="#expertise">Expertises</a></li>
-                                    <li><a href="#contact">Contacter nous</a></li>
+                                    <li><a href="#services">Nous solliciter</a></li>
                                     <li><a href="#difference">Nos différences</a></li>
 
 
@@ -232,13 +232,13 @@ class Comenco extends Component{
                                 </div>
 
                 {/* Start Portfolio Area */}
-                <div className="portfolio-area pt--120 pb--140 bg_color--1" id="contact">
+                <div className="portfolio-area pt--120 pb--140 bg_color--1" id="services">
                     <div className="rn-slick-dot">
                         <div className="container">
                             <div className="row">
                                 <div className="col-lg-6">
                                     <div className="section-title service-style--3 text-left mb--15 mb_sm--0">
-                                        <h2 className="title">Contacter nous</h2>
+                                        <h2 className="title">Nous solliciter</h2>
                                     </div>
                                 </div>
                             </div>

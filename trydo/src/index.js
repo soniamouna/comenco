@@ -10,6 +10,7 @@ import './index.scss';
 
 
 // Home layout
+/*
 import Demo from './page-demo/Demo';
 import MainDemo from './home/MainDemo';
 import Startup from './home/Startup';
@@ -31,10 +32,11 @@ import CorporateBusiness from './home/CorporateBusiness';
 // Dark Home Layout
 import DarkMainDemo from './dark/MainDemo';
 import DarkPortfolioLanding from './dark/PortfolioLanding';
-
+*/
 // Element Layout
-import Service from "./elements/Service";
 import Comenco from "./elements/Comenco";
+/*
+import Service from "./elements/Service";
 import ServiceDetails from "./elements/ServiceDetails";
 import About from "./elements/About";
 import Contact from "./elements/Contact";
@@ -59,7 +61,7 @@ import ContactForm from "./blocks/ContactForm";
 import GoogleMap from "./blocks/GoogleMap";
 import Columns from "./blocks/Columns";
 import PricingTable from "./blocks/PricingTable";
-
+*/
 import { BrowserRouter, Switch, Route  } from 'react-router-dom';
 import * as serviceWorker from './serviceWorker';
 
@@ -69,8 +71,9 @@ class Root extends Component{
         return(
             <BrowserRouter basename={'/'}>
                 <Switch>
-                    <Route exact path={`${process.env.PUBLIC_URL}/demo`} component={Demo}/>
                     <Route exact path={`${process.env.PUBLIC_URL}/`} component={Comenco}/>
+                    {/*
+                    <Route exact path={`${process.env.PUBLIC_URL}/demo`} component={Demo}/>
                     <Route exact path={`${process.env.PUBLIC_URL}/main-demo`} component={MainDemo}/>
                     <Route exact path={`${process.env.PUBLIC_URL}/dark-main-demo`} component={DarkMainDemo}/>
                     <Route exact path={`${process.env.PUBLIC_URL}/startup`} component={Startup}/>
@@ -91,9 +94,10 @@ class Root extends Component{
                     <Route exact path={`${process.env.PUBLIC_URL}/interior-landing`} component={InteriorLanding}/>
                     <Route exact path={`${process.env.PUBLIC_URL}/corporate-business`} component={CorporateBusiness}/>
                     <Route exact path={`${process.env.PUBLIC_URL}/active-facility-managment`} component={Afm}/>
-
+                    */}
 
                     {/* Element Layot */}
+                    {/* 
                     <Route exact path={`${process.env.PUBLIC_URL}/service`} component={Service}/>
                     <Route exact path={`${process.env.PUBLIC_URL}/service-details`} component={ServiceDetails}/>
                     <Route exact path={`${process.env.PUBLIC_URL}/contact`} component={Contact}/>
@@ -101,9 +105,10 @@ class Root extends Component{
                     <Route exact path={`${process.env.PUBLIC_URL}/portfolio-details`} component={PortfolioDetails}/>
                     <Route exact path={`${process.env.PUBLIC_URL}/blog`} component={Blog}/>
                     <Route exact path={`${process.env.PUBLIC_URL}/blog-details`} component={BlogDetails}/>
-
+                    */}
 
                     {/* Blocks Elements  */}
+                    {/*
                     <Route exact path={`${process.env.PUBLIC_URL}/team`} component={Team}/>
                     <Route exact path={`${process.env.PUBLIC_URL}/counters`} component={Counters}/>
                     <Route exact path={`${process.env.PUBLIC_URL}/testimonial`} component={Testimonial}/>
@@ -121,7 +126,7 @@ class Root extends Component{
 
                     <Route path={`${process.env.PUBLIC_URL}/404`} component={error404}/>
                     <Route component={error404}/>
-
+                    */}
                 </Switch>
             </BrowserRouter>
         )
