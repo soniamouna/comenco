@@ -6,8 +6,8 @@ class PageHelmet extends Component{
         return(
             <React.Fragment>
                 <Helmet>
-                    <title>{this.props.pageTitle} || Société sécurité genève  </title>
-                    <meta name="description" content="Trydo – Multipurpose React Template is a multi-use React template. It is designed to go well with multi-purpose websites. Trydo React Template will create that various landing Template, Creative Agency, And Corporate Website ." />
+                    <title>{this.props.pageTitle} || Société sécurité Genève  </title>
+                    <meta name="description" content="Avec 25 ans d’expérience dans le domaine de la sécurité, la direction Comenco SA rassemble des équipes de professionnels motivés à même de proposer à nos clients une large palette de services sur mesure." />
                 </Helmet>
             </React.Fragment>
         )
