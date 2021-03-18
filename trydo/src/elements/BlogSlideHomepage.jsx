@@ -19,7 +19,7 @@ class BlogSlideHomepage extends Component{
                     <div className="row">
                         <div className="col-lg-12 col-md-12 col-12 mt--30">
                             <div className="text-left section-title">
-                                <h2 className="title ">{this.props.titre}</h2>
+                                <h2>{this.props.titre}</h2>
                             </div>
                         </div>
                         {/* Start Single Service  */}
@@ -30,8 +30,10 @@ class BlogSlideHomepage extends Component{
                                             <div className="thumbnail">
                                                 <img src={`/assets/images/blog/comenco-blog-${value.images}.jpg`} alt={`DNA Global Analytics - ${value.title}`}/>
                                             </div>
-                                            <div className="content"><br/><h3 className="title">{value.title}</h3>
-                                                <p >{value.description}</p>
+                                            <div className="content"><br/><h3 className="title text-uppercase">{value.title}</h3>
+                                                <p >
+                                                 {value.description}
+                                                </p>
                                                 {/*<a className="btn-transparent rn-btn-dark" href={value.link}><span className="text"style={{color:'#F9004D'}}>Read More</span></a>*/}
                                             </div>
                                     </div>

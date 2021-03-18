@@ -40,19 +40,19 @@ const list = [
         image: 'image-4',
         category: '',
         title: 'Securité et Surveillance',
-        link:'https://www.comenco.ch/active-facility-managment'
+        link:'/'
     },
     {
         image: 'image-1',
         category: '',
         title: 'Active Facility Managment',
-        link:'https://www.comenco.ch/active-facility-managment'
+        link:'/facility-managment'
     },
     {
         image: 'image-2',
         category: '',
         title: 'Assistance à maître d’œuvre',
-        link:'https://www.comenco.ch/assistance-a-maitre-doeuvre-amo/'
+        link:'/amoe'
     },
     {
         image: 'image-3',
@@ -136,7 +136,7 @@ class Comenco extends Component{
                     <div className="header-wrapper" id="header-wrapper">
                         <div className="header-left">
                             <div className="logo">
-                                <a href="https://www.comenco.ch/" rel="home" itemprop="url">
+                                <a href="./" rel="home" itemprop="url">
                           					<h3 className="title" style={{color:"grey"}}>COMENCO SA <img draggable="false" role="img" class="col-2" alt="🇨🇭" src="https://s.w.org/images/core/emoji/13.0.0/svg/1f1e8-1f1ed.svg"/></h3>
                           				</a>
                             </div>
@@ -187,19 +187,16 @@ class Comenco extends Component{
 
                                 </p>
                                 <br/>
-                                <h3 className="title">Société spécialisée en sécurité, COMENCO SA,</h3>
+                                <h3 className="title">Vos spécialistes intégral</h3>
                                 <p>
-                                    Avec 25 ans d’expérience dans le domaine de la sécurité, la direction Comenco SA rassemble des équipes de professionnels motivés à
-                                    même de proposer à nos clients une large palette de services sur mesure. Nous voulons être dignes de confiance dans la collaboration avec chacun(e) de nos interlocuteurs. L’engagement de respecter les normes éthiques les plus élevées est ancré dans le système de valeurs du groupe.
+                                    Comenco SA se charge des tâches liées à la gestion des immeubles et de diverses infrastructures. La qualité du travail mais
+                                    également le suivi sur le long terme sont pour nous des valeurs essentielles. Notre mission est
+                                    de conserver vos biens au quotidien.
                                 </p>
-                                <p>Notre engagement se fonde sur les quatre valeurs suivantes de notre entreprise:
-                                  <ul>
-                                    <li>équité</li>
-                                    <li>transparence</li>
-                                    <li>obligation de rendre compte</li>
-                                    <li>responsabilité</li>
-                                  </ul>
-                                  <i><p>En respectant nos collaborateurs, nous respectons nos clients.</p></i>
+                                <p>
+                                  Ces domaines sont couverts pour le moment par nos partenaires spécialisés dans
+                                  l’exercice de la gestion des installations modernes et reliées à toute les
+                                  disciplines, le meilleur parti des synergies ainsi dégagées.
                                 </p>
                             </div>
                         </div>
@@ -227,8 +224,7 @@ class Comenco extends Component{
                                 </div>
                                 {/* End Service Area  */}
                                 <div id="expertise">
-                                    <BlogSlideHomepage PostList={Content1} titre={"Notre expertise"}/>
-                                    <BlogSlideHomepage PostList={Content2} titre={"Notre expertise technologique"}/>
+                                    <BlogSlideHomepage PostList={Content1} titre={"Nos domaines d’expertises et de services"}/>
                                 </div>
 
                 {/* Start Portfolio Area */}
@@ -248,6 +244,7 @@ class Comenco extends Component{
                                         <Slider {...slickDot}>
                                             {list.map((value , index) => (
                                                 <div className="portfolio" key={index}>
+                                                  <a href={value.link}>
                                                     <div className="thumbnail-inner">
                                                         <div className={`thumbnail ${value.image}`}></div>
                                                         <div className={`bg-blr-image ${value.image}`}></div>
@@ -255,12 +252,13 @@ class Comenco extends Component{
                                                     <div className="content">
                                                         <div className="inner">
                                                             <p>{value.category}</p>
-                                                            <h4><a href={value.title}>{value.title}</a></h4>
+                                                            <h4 className="text-white">{value.title}</h4>
                                                             {/*<div className="portfolio-button">
                                                                 <a className="rn-btn" href={value.link}>Nous contacter</a>
                                                             </div>*/}
                                                         </div>
                                                     </div>
+                                                    </a>
                                                 </div>
                                             ))}
                                         </Slider>
@@ -283,6 +281,28 @@ class Comenco extends Component{
                             </div>
                         </div>
                         <Difference/>
+                    </div>
+                </div>
+
+                <div id="about" className=" about-area ptb--120 bg_color--5">
+                  <div className="about-wrapper">
+                      <div className="container">
+                            <div className="section-title">
+                                <h2 className="title">Notre promesse</h2>
+
+                                <p className="description">
+                                  Nous sommes à l’écoute de vos besoins et dotée d’un véritable esprit professionnel qui se distingue par un personnel dynamique et efficace.
+                                  Une prestation avec des prix attractifs qui tient compte des besoins et des moyens financiers de nos clients en vue de faire des économies.
+
+                                </p>
+                                <p className="description">
+                                  Nos services aux professionnels visent à entretenir au mieux l’image de marque, la sécurité et le bien être de vos clients.
+                                </p>
+                                <p className="description">
+                                  Notre métier, votre plus-value
+                                </p>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
@@ -316,7 +336,7 @@ class Comenco extends Component{
                 {/* Start Contact Top Area  */}
                 <div id="contact" className="rn-contact-top-area ptb--120 bg_color--5">
                     <div className="container">
-
+                        <h2 className="title">Nous contacter</h2>
                         <div className="row">
                             {/* Start Single Address  */}
                             <div className="col-lg-4 col-md-6 col-sm-6 col-12">

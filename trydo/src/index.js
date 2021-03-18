@@ -35,6 +35,7 @@ import DarkPortfolioLanding from './dark/PortfolioLanding';
 */
 // Element Layout
 import Comenco from "./elements/Comenco";
+import Afm from "./elements/Afm";
 /*
 import Service from "./elements/Service";
 import ServiceDetails from "./elements/ServiceDetails";
@@ -72,6 +73,7 @@ class Root extends Component{
             <BrowserRouter basename={'/'}>
                 <Switch>
                     <Route exact path={`${process.env.PUBLIC_URL}/`} component={Comenco}/>
+                    <Route exact path={`${process.env.PUBLIC_URL}/facility-managment`} component={Afm}/>
                     {/*
                     <Route exact path={`${process.env.PUBLIC_URL}/demo`} component={Demo}/>
                     <Route exact path={`${process.env.PUBLIC_URL}/main-demo`} component={MainDemo}/>
@@ -97,7 +99,7 @@ class Root extends Component{
                     */}
 
                     {/* Element Layot */}
-                    {/* 
+                    {/*
                     <Route exact path={`${process.env.PUBLIC_URL}/service`} component={Service}/>
                     <Route exact path={`${process.env.PUBLIC_URL}/service-details`} component={ServiceDetails}/>
                     <Route exact path={`${process.env.PUBLIC_URL}/contact`} component={Contact}/>

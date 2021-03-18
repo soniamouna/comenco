@@ -8,14 +8,17 @@ const SlideList = [
     {
         textPosition: 'text-left',
         bgImage: 'bg_image--2',
+        link:'/',
     },
     {
         textPosition: 'text-left',
         bgImage: 'bg_image--3',
+        link:'/facility-managment',
     },
     {
         textPosition: 'text-left',
         bgImage: 'bg_image--4',
+        link:'/amoe',
     }
 ]
 
@@ -34,9 +37,9 @@ class BreadcrumpS extends Component{
                                       <div className="row">
                                           <div className="col-lg-12">
                                               <div className={`inner ${value.textPosition}`}>
-                                                  <h2 style={{color:'white'}} className="title">La sécurité une affaire de spécialistes</h2>
-                                                  <p className="description">Votre compagnie de sécurité basée à Genève vous protège partout en Suisse.</p>
-                                                  <div className="slide-btn"><a className="rn-button-style--2 btn-solid" href="#contact">Nous contacter</a></div>
+                                                  <h2 style={{color:'white'}} className="title">Active facility managment</h2>
+                                                  <p className="description">Avec nous, vous êtes assuré de la carte de la qualité</p>
+                                                  <div className="slide-btn"><a className="rn-button-style--2 btn-solid" href={value.link}>Nous contacter</a></div>
                                               </div>
                                           </div>
                                       </div>

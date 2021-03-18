@@ -13,15 +13,15 @@ import React, { Component , Fragment } from "react";
                   let Data = [
                       {
                           title : 'Disponibilité',
-                          countTitle: 'Nous sommes réactifs, prenons le temps  d’écouter , comprendre et  répondre aux questions de nos clients, les rassurer et les accompagner dans leurs démarches. ',
+                          countTitle: 'Que ce soit à l’intérieur comme à l’extérieur, nous vous offrons une maintenance irréprochable ',
                       },
                       {
                         title : 'Professionnalisme',
-                        countTitle: 'Nos agents de sécurité interviennent dans le cadre de leur mission dans le strict respect des lois, règles, procédures et consignes. Tous les agents de sécurité déployés sont des agents qualifiés et certifiés,',
+                        countTitle: 'Grâce à nos services de maintenance et de conciergerie, et de notre entretien professionnel nous conserverons la valeur de vos biens immobiliers et installations. Dans toutes nos activités, vos bâtiments ont toute l’année un aspect irréprochable et dégagent une atmosphère agréable pour vous, votre famille, vos collaborateurs et vos clients. ',
                       },
                       {
                           title : 'Proximité',
-                          countTitle: 'Implantée au cœur de la ville de Genève et intervenant sur tout le territoire Suisse, la proximité avec nos clients est un facteur essentiel de qualité et de services',
+                          countTitle: 'Les travaux à effectués sont définis avec précision par notre équipe et nos partenaires, ce qui permet aussi de déceler les possibilités de réduire les coûts.',
 
                       },
                   ];
