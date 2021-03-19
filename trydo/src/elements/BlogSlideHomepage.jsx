@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Slider from "react-slick";
 import {slickDot2 } from "../page-demo/script";
-import Content1 from "../elements/blog/Content1";
+import HomeContent1 from "../elements/blog/HomeContent1";
 
 
 class BlogSlideHomepage extends Component{

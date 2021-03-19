@@ -16,9 +16,9 @@ import Contact from "../elements/contact/ContactTwo";
 import Helmet from "../component/common/Helmet";
 import BreadcrumpS from "../elements/BreadcrumpS";
 import Difference from "../elements/Difference";
-import ListSlideHomepage from "../elements/ListSlideHomepage";
+import BlogSlideHomepage from "../elements/BlogSlideHomepage";
 import { FiHeadphones , FiMail , FiMapPin } from "react-icons/fi";
-import AfmList from "../elements/blog/AfmList";
+import Content2 from "../elements/blog/Content2";
 
 
 
@@ -36,16 +36,22 @@ const SlideList = [
 
 const list = [
     {
+        image: 'image-4',
+        category: '',
+        title: 'Securité et Surveillance',
+        link:'/'
+    },
+    {
         image: 'image-1',
         category: '',
         title: 'Active Facility Managment',
-        link:'https://www.comenco.ch/active-facility-managment/'
+        link:'/facility-managment'
     },
     {
         image: 'image-2',
         category: '',
-        title: 'Assistance à maître d’œuvre (AMO)',
-        link:'https://www.comenco.ch/assistance-a-maitre-doeuvre-amo/'
+        title: 'Assistance à maître d’œuvre',
+        link:'/amoe'
     },
     {
         image: 'image-3',
@@ -79,7 +85,7 @@ const DataCounter = [
 
 
 
-  class Afm extends Component{
+class Afm extends Component{
     constructor(props) {
         super(props);
         this.menuTrigger = this.menuTrigger.bind(this);
@@ -129,19 +135,19 @@ const DataCounter = [
                     <div className="header-wrapper" id="header-wrapper">
                         <div className="header-left">
                             <div className="logo">
-                                <a href="https://www.comenco.ch/" rel="home" itemprop="url">
-                          					<h3 className="title" style={{color:"grey"}}>COMENCO SA <img draggable="false" role="img" class="col-2" alt="🇨🇭" src="https://s.w.org/images/core/emoji/13.0.0/svg/1f1e8-1f1ed.svg"/></h3>
+                                <a href="./" rel="home" itemprop="url">
+                          					<h3 className="title" style={{color:"grey"}}>COMENCO SA <img draggable="false" role="img" class="col-2" alt="🇨🇭" src="assets/images/logo/logo-ch.svg"/></h3>
                           				</a>
                             </div>
                         </div>
                         <div className="header-right">
-                            <nav className=" mainmenunav d-lg-block">
-                                <Scrollspy className="mainmenu" >
-                                    <li><a href="/#home">Accueil</a></li>
-                                    <li><a href="/#about">Qui sommes-nous</a></li>
-                                    <li><a href="/#expertise">Expertises</a></li>
-                                    <li><a href="/#portfolio">Recrutement</a></li>
-                                    <li><a href="/#difference">Nos différences</a></li>
+                            <nav className="mainmenunav d-lg-block">
+                                <Scrollspy className="mainmenu" items={['home', 'about','expertise','services', 'difference']} currentClassName="is-current" offset={-200}>
+                                    <li><a href="./">Accueil</a></li>
+                                    <li><a href="#about">Qui sommes-nous</a></li>
+                                    <li><a href="#expertise">Expertises</a></li>
+                                    <li><a href="#services">Nous solliciter</a></li>
+                                    <li><a href="#difference">Nos différences</a></li>
 
 
                                 </Scrollspy>
@@ -164,27 +170,45 @@ const DataCounter = [
                 </header>
                 {/* End Header Area  */}
 
-                {/* Start Slider Area
-
-                    <BreadcrumpS/>
+                {/* Start Slider Area   */}
+                <div className="bg_image bg_image--2" id="home">
+                            <div data-black-overlay="6"  className="slide slide-style-2 slider-paralax d-flex align-items-center justify-content-center" >
+                                <div className="container">
+                                    <div className="row">
+                                        <div className="col-lg-12">
+                                            <div className="inner text-left">
+                                                <h2 className="title text-white text-uppercase">Comenco Facility Managment</h2>
+                                                <p className="description">Avec nous, vous êtes assuré de la carte de la qualité</p>
+                                                <div className="slide-btn"><a className="rn-button-style--2 btn-solid" href="#contact">Nous contacter</a></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
                 {/* End Slider Area   */}
 
 
                 {/* Start About Area */}
-                <div id="about" className=" about-area ptb--150 bg_color--5">
+                <div id="about" className=" about-area ptb--120 bg_color--5">
                   <div className="about-wrapper">
                       <div className="container">
                             <div className="section-title">
-                                <h2 className="text-center title">VOS SPÉCIALISTES INTÉGRAL</h2>
+                                <h2 className="title">Qui sommes nous ?</h2>
+                                <p className="description">
 
+                                </p>
                                 <br/>
+                                <h3 className="title">Vos spécialistes intégral</h3>
                                 <p>
-                                    COMENCO SA se charge des tâches liées à la gestion des immeubles et de diverses infrastructures. La qualité du travail mais également le
-                                    suivi sur le long terme sont pour nous des valeurs essentielles. Notre mission est de conserver vos biens au quotidien.
+                                    Comenco SA se charge des tâches liées à la gestion des immeubles et de diverses infrastructures. La qualité du travail mais
+                                    également le suivi sur le long terme sont pour nous des valeurs essentielles. Notre mission est
+                                    de conserver vos biens au quotidien.
                                 </p>
                                 <p>
-                                  Ces domaines sont couverts pour le moment par nos partenaires spécialisés dans l’exercice de la gestion des installations modernes et
-                                  reliées à toutes les disciplines, le meilleur parti des synergies ainsi dégagées.
+                                  Ces domaines sont couverts pour le moment par nos partenaires spécialisés dans
+                                  l’exercice de la gestion des installations modernes et reliées à toute les
+                                  disciplines, le meilleur parti des synergies ainsi dégagées.
                                 </p>
                             </div>
                         </div>
@@ -211,16 +235,18 @@ const DataCounter = [
                                     </div>
                                 </div>
                                 {/* End Service Area  */}
-                                <ListSlideHomepage PostList={AfmList}/>
+                                <div id="expertise">
+                                    <BlogSlideHomepage PostList={Content2} titre={"Nos domaines d’expertises et de services"}/>
+                                </div>
 
                 {/* Start Portfolio Area */}
-                <div className="portfolio-area pt--120 pb--140 bg_color--1" id="portfolio">
+                <div className="portfolio-area pt--120 pb--140 bg_color--1" id="services">
                     <div className="rn-slick-dot">
                         <div className="container">
                             <div className="row">
                                 <div className="col-lg-6">
                                     <div className="section-title service-style--3 text-left mb--15 mb_sm--0">
-                                        <h2 className="title">Recrutement</h2>
+                                        <h2 className="title">Nous solliciter</h2>
                                     </div>
                                 </div>
                             </div>
@@ -230,6 +256,7 @@ const DataCounter = [
                                         <Slider {...slickDot}>
                                             {list.map((value , index) => (
                                                 <div className="portfolio" key={index}>
+                                                  <a href={value.link}>
                                                     <div className="thumbnail-inner">
                                                         <div className={`thumbnail ${value.image}`}></div>
                                                         <div className={`bg-blr-image ${value.image}`}></div>
@@ -237,12 +264,13 @@ const DataCounter = [
                                                     <div className="content">
                                                         <div className="inner">
                                                             <p>{value.category}</p>
-                                                            <h4><a href={value.title}>{value.title}</a></h4>
-                                                            <div className="portfolio-button">
-                                                                <a className="rn-btn" href={value.link}>See Now</a>
-                                                            </div>
+                                                            <h4 className="text-white">{value.title}</h4>
+                                                            {/*<div className="portfolio-button">
+                                                                <a className="rn-btn" href={value.link}>Nous contacter</a>
+                                                            </div>*/}
                                                         </div>
                                                     </div>
+                                                    </a>
                                                 </div>
                                             ))}
                                         </Slider>
@@ -265,6 +293,28 @@ const DataCounter = [
                             </div>
                         </div>
                         <Difference/>
+                    </div>
+                </div>
+
+                <div id="about" className=" about-area ptb--120 bg_color--5">
+                  <div className="about-wrapper">
+                      <div className="container">
+                            <div className="section-title">
+                                <h2 className="title">Notre promesse</h2>
+
+                                <p className="description">
+                                  Nous sommes à l’écoute de vos besoins et dotée d’un véritable esprit professionnel qui se distingue par un personnel dynamique et efficace.
+                                  Une prestation avec des prix attractifs qui tient compte des besoins et des moyens financiers de nos clients en vue de faire des économies.
+
+                                </p>
+                                <p className="description">
+                                  Nos services aux professionnels visent à entretenir au mieux l’image de marque, la sécurité et le bien être de vos clients.
+                                </p>
+                                <p className="description">
+                                  Notre métier, votre plus-value
+                                </p>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
@@ -298,7 +348,7 @@ const DataCounter = [
                 {/* Start Contact Top Area  */}
                 <div id="contact" className="rn-contact-top-area ptb--120 bg_color--5">
                     <div className="container">
-
+                        <h2 className="title">Nous contacter</h2>
                         <div className="row">
                             {/* Start Single Address  */}
                             <div className="col-lg-4 col-md-6 col-sm-6 col-12">
