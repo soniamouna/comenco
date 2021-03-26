@@ -18,7 +18,7 @@ import BreadcrumpS from "../elements/BreadcrumpS";
 import Difference from "../elements/Difference";
 import BlogSlideHomepage2 from "../elements/BlogSlideHomepage2";
 import { FiHeadphones , FiMail , FiMapPin } from "react-icons/fi";
-import Content2 from "../elements/blog/Content2";
+import Content3 from "../elements/blog/Content3";
 
 
 
@@ -73,7 +73,7 @@ const DataCounter = [
 
 
 
-class Afm extends Component{
+class Amoe extends Component{
     constructor(props) {
         super(props);
         this.menuTrigger = this.menuTrigger.bind(this);
@@ -165,8 +165,8 @@ class Afm extends Component{
                                     <div className="row">
                                         <div className="col-lg-12">
                                             <div className="inner text-left">
-                                                <h2 className="title text-white text-uppercase">Comenco Facility Managment</h2>
-                                                <p className="description">Avec nous, vous êtes assuré de la carte de la qualité</p>
+                                                <h2 className="title text-white text-uppercase">Comenco Assistance Maîtrise d’œuvre </h2>
+                                                <p className="description">Vous avez une construction ou une rénovation complexe ou spécifique à effectuer ?</p>
                                                 <div className="slide-btn"><a className="rn-button-style--2 btn-solid" href="#contact">Nous contacter</a></div>
                                             </div>
                                         </div>
@@ -189,20 +189,18 @@ class Afm extends Component{
                                 <br/>
                                 <h3 className="title">Vos spécialistes intégral</h3>
                                 <p>
-                                    Comenco SA se charge des tâches liées à la gestion des immeubles et de diverses infrastructures. La qualité du travail mais
-                                    également le suivi sur le long terme sont pour nous des valeurs essentielles. Notre mission est
-                                    de conserver vos biens au quotidien.
+                                    Vous souhaitez mener à terme votre projet avec l’aide d’experts vous guidant de manière neutre tout au long de la réalisation de votre ouvrage.
+                                    La principale responsabilité du maître d’œuvre est la reconnaissance des risques qui influent directement sur la potentielle réussite du projet de travaux. Ces risques doivent donc être mesurés de façon formelle et informelle tout au long de la durée du projet.
                                 </p>
                                 <p>
-                                  Ces domaines sont couverts pour le moment par nos partenaires spécialisés dans
-                                  l’exercice de la gestion des installations modernes et reliées à toute les
-                                  disciplines, le meilleur parti des synergies ainsi dégagées.
+                                    Les risques découlent de l’incertitude. Le maître d’œuvre qui réussit sa mission est avant tout celui qui se concentre sur cela et qui en fait sa principale préoccupation. La plupart des questions qui ont un impact sur un projet de travaux se traduisent, d’une manière ou d’une autre, par un risque. 
                                 </p>
                             </div>
                         </div>
                     </div>
                 </div>
                 {/* End About Area */}
+
 
                 {/* Start Portfolio Area */}
                 <div className="portfolio-area pt--120 pb--140 bg_color--1" id="services">
@@ -270,7 +268,7 @@ class Afm extends Component{
                 </div>
                 {/* End Service Area  */}
                 <div id="expertise">
-                    <BlogSlideHomepage2 PostList={Content2} titre={"Nos domaines d’expertises et de services"}/>
+                    <BlogSlideHomepage2 PostList={Content3} titre={"Nos domaines d’expertises et de services"}/>
                 </div>
 
                 <div id="difference" className="rn-counterup-area pt--140 p pb--110 bg_color--5">
@@ -412,4 +410,4 @@ class Afm extends Component{
         )
     }
 }
-export default Afm;
+export default Amoe;

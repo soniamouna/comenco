@@ -52,7 +52,7 @@ const list = [
         image: 'image-2',
         category: '',
         title: 'Assistance à maître d’œuvre',
-        link:'/amoe'
+        link:'/assistance-maitrise-oeuvre'
     },
       {
         image: 'image-3',
@@ -143,11 +143,11 @@ class Comenco extends Component{
                         </div>
                         <div className="header-right">
                             <nav className="mainmenunav d-lg-block">
-                                <Scrollspy className="mainmenu" items={['home', 'about','expertise','services', 'difference']} currentClassName="is-current" offset={-200}>
+                                <Scrollspy className="mainmenu" items={['home', 'about','services','expertise', 'difference']} currentClassName="is-current" offset={-200}>
                                     <li><a href="/#home">Accueil</a></li>
                                     <li><a href="#about">Qui sommes-nous</a></li>
-                                    <li><a href="#expertise">Expertises</a></li>
                                     <li><a href="#services">Nous solliciter</a></li>
+                                    <li><a href="#expertise">Expertises</a></li>
                                     <li><a href="#difference">Nos différences</a></li>
 
 
@@ -207,30 +207,6 @@ class Comenco extends Component{
                 </div>
                 {/* End About Area */}
 
-
-                                {/* Start Service Area
-                                <div id="expertise" className="service-area creative-service-wrapper ptb--120 bg_color--1">
-                                    <div className="container">
-                                        <div className="row">
-                                            <div className="col-lg-12 col-12">
-                                                <div className="section-title text-left mb--30">
-                                                    <h2>Nos domaines d'expertise</h2>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div className="row creative-service">
-                                            <div className="col-lg-12">
-                                                <ServiceList item="19" column="col-lg-4 col-md-6 col-sm-6 col-12 text-left" />
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                {/* End Service Area  */}
-                                <div id="expertise">
-                                    <BlogSlideHomepage PostList={HomeContent1} titre={"Notre expertise"}/>
-                                    <BlogSlideHomepage PostList={HomeContent2} titre={"Notre expertise technologique"}/>
-                                </div>
-
                 {/* Start Portfolio Area */}
                 <div className="portfolio-area pt--120 pb--140 bg_color--1" id="services">
                     <div className="rn-slick-dot">
@@ -274,6 +250,30 @@ class Comenco extends Component{
                     </div>
                 </div>
                 {/* End Portfolio Area */}
+
+
+                {/* Start Service Area
+                <div id="expertise" className="service-area creative-service-wrapper ptb--120 bg_color--1">
+                    <div className="container">
+                        <div className="row">
+                            <div className="col-lg-12 col-12">
+                                <div className="section-title text-left mb--30">
+                                    <h2>Nos domaines d'expertise</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="row creative-service">
+                            <div className="col-lg-12">
+                                <ServiceList item="19" column="col-lg-4 col-md-6 col-sm-6 col-12 text-left" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {/* End Service Area  */}
+                <div id="expertise">
+                    <BlogSlideHomepage PostList={HomeContent1} titre={"Notre expertise"}/>
+                    <BlogSlideHomepage PostList={HomeContent2} titre={"Notre experise Computer Vision"}/>
+                </div>
 
                 <div id="difference" className="rn-counterup-area pt--140 p pb--110 bg_color--5">
                     <div className="container">

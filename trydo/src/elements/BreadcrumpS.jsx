@@ -15,10 +15,10 @@ const SlideList = [
         bgImage: 'bg_image--2',
         link:'/facility-managment',
     },
-    {   title:'Comenco amoe',
+    {   title:'Comenco AMOE',
         textPosition: 'text-left',
         bgImage: 'bg_image--4',
-        link:'/amoe',
+        link:'/assistance-maitrise-oeuvre',
     }
 ]
 

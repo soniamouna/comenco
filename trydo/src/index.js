@@ -36,6 +36,7 @@ import DarkPortfolioLanding from './dark/PortfolioLanding';
 // Element Layout
 import Comenco from "./elements/Comenco";
 import Afm from "./elements/Afm";
+import Amoe from "./elements/Amoe";
 /*
 import Service from "./elements/Service";
 import ServiceDetails from "./elements/ServiceDetails";
@@ -74,6 +75,7 @@ class Root extends Component{
                 <Switch>
                     <Route exact path={`${process.env.PUBLIC_URL}/`} component={Comenco}/>
                     <Route exact path={`${process.env.PUBLIC_URL}/facility-managment`} component={Afm}/>
+                    <Route exact path={`${process.env.PUBLIC_URL}/assistance-maitrise-oeuvre`} component={Amoe}/>
                     {/*
                     <Route exact path={`${process.env.PUBLIC_URL}/demo`} component={Demo}/>
                     <Route exact path={`${process.env.PUBLIC_URL}/main-demo`} component={MainDemo}/>

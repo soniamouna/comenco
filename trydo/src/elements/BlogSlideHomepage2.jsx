@@ -3,7 +3,7 @@ import Slider from "react-slick";
 import {slickDot2 } from "../page-demo/script";
 
 
-class BlogSlideHomepage extends Component{
+class BlogSlideHomepage2 extends Component{
   constructor(props){
     super (props);
     }
@@ -27,12 +27,14 @@ class BlogSlideHomepage extends Component{
                                 {this.props.PostList.map((value , index) => (
                                     <div className="blog col-lg-12 col-md-4 mt--30" key={index}>
                                             <div className="thumbnail">
-                                                <img src={`/assets/images/blog/comenco-blog-${value.images}.jpg`} alt={`DNA Global Analytics - ${value.title}`}/>
+                                                <img src={`/assets/images/blog/comenco-blog-${value.images}.jpg`} alt={`Comenco - ${value.title}`}/>
                                             </div>
                                             <div className="content"><br/><h3 className="title text-uppercase">{value.title}</h3>
-                                                <p >
-                                                 {value.description}
-                                                </p>
+                                                <ul>
+                                                    {value.description.map((v , i) => (
+                                                        <li>{v}</li>
+                                                    ))}      
+                                                </ul>
                                                 {/*<a className="btn-transparent rn-btn-dark" href={value.link}><span className="text"style={{color:'#F9004D'}}>Read More</span></a>*/}
                                             </div>
                                     </div>
@@ -48,4 +50,4 @@ class BlogSlideHomepage extends Component{
 }
 
 
-export default BlogSlideHomepage;
+export default BlogSlideHomepage2;
