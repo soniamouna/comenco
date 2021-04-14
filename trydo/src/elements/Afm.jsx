@@ -45,7 +45,7 @@ const list = [
         image: 'image-3',
         category: '',
         title: 'Recrutement',
-        link:'https://www.comenco.ch/recrutement-securite/'
+        link:'/#contact'
     },
 
 ]
@@ -166,7 +166,7 @@ class Afm extends Component{
                                         <div className="col-lg-12">
                                             <div className="inner text-left">
                                                 <h2 className="title text-white text-uppercase">Comenco Facility Managment</h2>
-                                                <p className="description">Avec nous, vous êtes assuré de la carte de la qualité</p>
+                                                <p className="description">La gestion et la sécurité de vos bâtiments</p>
                                                 <div className="slide-btn"><a className="rn-button-style--2 btn-solid" href="#contact">Nous contacter</a></div>
                                             </div>
                                         </div>

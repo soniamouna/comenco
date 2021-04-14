@@ -95,7 +95,7 @@ export const slickDot = {
 export const slickDot2 = {
     infinite: true,
     slidesToShow: 3,
-    slidesToScroll: 3,
+    slidesToScroll: 1,
     dots: true,
     arrows: true,
     autoplay: true,
@@ -116,7 +116,7 @@ export const slickDot2 = {
     {
         breakpoint: 580,
         settings: {
-            slidesToShow: 2,
+            slidesToShow: 1,
         }
     },
     {

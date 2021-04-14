@@ -45,7 +45,7 @@ const list = [
         image: 'image-3',
         category: '',
         title: 'Recrutement',
-        link:'https://www.comenco.ch/recrutement-securite/'
+        link:'/#contact'
     },
 
 ]

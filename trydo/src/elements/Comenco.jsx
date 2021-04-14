@@ -24,17 +24,6 @@ import HomeContent2 from "../elements/blog/HomeContent2";
 
 
 
-const SlideList = [
-    {
-        textPosition: 'text-center',
-        category: '',
-        title: 'Creative One Page',
-        description: 'There are many variations of passages of Lorem Ipsum available but the majority have suffered alteration.',
-        buttonText: 'Contact Us',
-        buttonLink: '/contact'
-    }
-]
-
 const list = [
     {
         image: 'image-4',
@@ -58,7 +47,7 @@ const list = [
         image: 'image-3',
         category: '',
         title: 'Recrutement',
-        link:'https://www.comenco.ch/recrutement-securite/'
+        link:'/#contact'
     },
 
 ]
@@ -272,7 +261,7 @@ class Comenco extends Component{
                 {/* End Service Area  */}
                 <div id="expertise">
                     <BlogSlideHomepage PostList={HomeContent1} titre={"Notre expertise"}/>
-                    <BlogSlideHomepage PostList={HomeContent2} titre={"Notre experise Computer Vision"}/>
+                    <BlogSlideHomepage PostList={HomeContent2} titre={"Notre experise Computer Vision"} soustitre={"Comenco s'est rapproché de la société DNA Global Analytics pour proposer des solutions innovantes en termes de sécurité et Intelligence Artificielle."}/>
                 </div>
 
                 <div id="difference" className="rn-counterup-area pt--140 p pb--110 bg_color--5">

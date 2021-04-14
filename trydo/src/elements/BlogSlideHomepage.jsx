@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import Slider from "react-slick";
 import {slickDot2 } from "../page-demo/script";
+import Popup from 'reactjs-popup';
+import 'reactjs-popup/dist/index.css';
 
 
 class BlogSlideHomepage extends Component{
@@ -19,6 +21,7 @@ class BlogSlideHomepage extends Component{
                         <div className="col-lg-12 col-md-12 col-12 mt--30">
                             <div className="text-left section-title">
                                 <h2>{this.props.titre}</h2>
+                                <a href="https://dna-ga.com" target="_blank"><p>{this.props.soustitre}</p></a>
                             </div>
                         </div>
                         {/* Start Single Service  */}
@@ -26,15 +29,19 @@ class BlogSlideHomepage extends Component{
                             <Slider {...slickDot2}>
                                 {this.props.PostList.map((value , index) => (
                                     <div className="blog col-lg-12 col-md-4 mt--30" key={index}>
+                                        <a className="btn-transparent rn-btn-dark">
                                             <div className="thumbnail">
-                                                <img src={`/assets/images/blog/comenco-blog-${value.images}.jpg`} alt={`DNA Global Analytics - ${value.title}`}/>
+                                                <img src={`/assets/images/blog/comenco-blog-${value.images}.jpg`} alt={`Comenco - ${value.title}`}/>
                                             </div>
-                                            <div className="content"><br/><h3 className="title text-uppercase">{value.title}</h3>
-                                                <p >
-                                                 {value.description}
-                                                </p>
+                                            <div>
+                                                <Popup trigger={<h3 className="title text-uppercase">{value.title}</h3>} position="center">
+                                                    <p>
+                                                    {value.description}
+                                                    </p>
+                                                </Popup>
                                                 {/*<a className="btn-transparent rn-btn-dark" href={value.link}><span className="text"style={{color:'#F9004D'}}>Read More</span></a>*/}
                                             </div>
+                                        </a>
                                     </div>
                                 ))}
                             </Slider>
